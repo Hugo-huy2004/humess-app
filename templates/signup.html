@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Humess@</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <form id="signupForm" action="/register" method="POST">
+            <input type="text" name="name" placeholder="Họ và Tên" required><br>
+            <input type="date" name="dob" required><br>
+            <input type="text" id="phone" name="phone" placeholder="Số điện thoại" required><br>
+            <input type="email" name="email" placeholder="Gmail" required><br>
+            <label>Giới tính:</label>
+            <input type="radio" name="gender" value="Nam" required> Nam
+            <input type="radio" name="gender" value="Nữ" required> Nữ<br>
+            <input type="text" name="address" placeholder="Địa chỉ" required><br>
+            <input type="password" id="password" name="password" placeholder="Mật khẩu (6 số)" required><br>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <button data-target="home.html">Quay lại</button>
+    </div>
+</body>
+</html>

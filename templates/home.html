@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humess@ - Trang Chính</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng đến với Humess@</h1>
+        <button data-target="{{ url_for('register_page') }}">Tạo tài khoản</button>
+        <button data-target="{{ url_for('login_page') }}">Kết nối</button>
+        <button data-target="{{ url_for('investigation_page') }}">Tra thông tin</button>
+    </div>
+</body>
+</html>

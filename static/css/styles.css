@@ -1,0 +1,35 @@
+/* styles.css - Giao diện cute, màu hồng, dễ dùng cho trẻ em */
+body {
+    background-color: #ffe4e1; /* Hồng pastel */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: #d63384; /* Hồng đậm */
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #ff69b4; /* Hồng nổi bật */
+}
+
+button {
+    background: #ff85a2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #ff5f8a;
+}
